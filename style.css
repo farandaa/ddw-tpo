@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(./img/fondo-header.jpg);
+    background-size: cover;
+}
+
+.logo-web {
+    backdrop-filter: brightness(.3);
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilo de nav*/
+nav {
+    min-height: 85vh;
+    backdrop-filter: brightness(.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link-nav-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-nav {
+    width: 50vw;
+    height: 28.3vh;
+    display: flex;
+}
+
+.btn-nav img {
+    width: auto;
+    height: 65%;
+}
+
+/*si se rompe, agregar el nav ul li a*/
+.link-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: .3s all ease-in-out;
+    border-radius: 10px
+}
+
+.link-nav:hover {
+    background-color: #2edf840e;
+}
+
+.link-nav::before {
+    content: "";
+    width: 0px;
+    height: 5px;
+    border-radius: 80px;
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+}
+
+.link-nav:hover::before {
+    transition: .3s all ease-in-out;
+    width: 50%;
+    background-color: #2edf84;
+}
+
+/*estilo base de la seccion géneros*/
+.generos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+/*fondo genero*/
+#genero-rock {
+    background-image: url(./img/fondo-rock.jpg);
+}
+
+#genero-pop {
+    background-image: url(./img/fondo-pop.jpg);
+}
+
+#genero-rap {
+    background-image: url(./img/fondo-rap.jpg);
+}
+
+#genero-reggaeton {
+    background-image: url(./img/fondo-reggaeton.jpg);
+}
+
+#genero-electronica {
+    background-image: url(./img/fondo-electronica.jpg);
+}
+
+/*contenedor presentacion del género*/
+.presentacion-genero {
+    min-width: 100vw;
+    min-height: 39vh;
+    backdrop-filter: brightness(.3);
+}
+
+/*elementos presentación*/
+.titulo-genero {
+    font-size: 5rem;
+    padding: .5vw 6vh;
+}
+
+.descripcion-genero {
+    font-weight: 350;
+    font-size: 1.5rem;
+    padding: 0vw 6vh;
+}
+
+/*contenedor canciones del género*/
+.canciones-genero {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    backdrop-filter: brightness(.1);
+}
+
+/*botón de desplazamiento*/
+button {
+    background: linear-gradient(to top, rgba(255, 72, 0, 0.060), rgba(0, 0, 255, 0.060));
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+button:hover {
+    background: linear-gradient(to top, rgba(255, 72, 0, 0.40), rgba(0, 0, 255, 0.40));
+}
+
+/*cards canciones*/
+.card-cancion {
+    background-color: #00000000;
+    min-width: 20vw;
+    min-height: 50vh;
+    margin: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.card-cancion:hover {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(27, 27, 27, 0.879));
+    transform: scale(1.05);
+}
+
+.portada-card {
+    width: 15.3vw;
+    height: 35vh;
+    padding: .15vw .15vh;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.info-card {
+    font-size: 25px;
+    text-align: center;
+}
+
+.artista-cancion {
+    font-size: 20px;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card-cancion:hover img {
+    animation: rotar 6s infinite linear;
+    border-radius: 50%;
+}
+
+/*Tienda*/
+
+.presentacion-tienda {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/fondo-tienda.jpg);
+    background-size: cover;
+    backdrop-filter: saturate(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-tienda h2 {
+    font-size: 200px;
+    color: #eeac39;
+}
+
+.tienda {
+    padding: 50px;
+    gap: 30px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card-tienda {
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    /*object-fit:scale-down;*/
+}
+
+.card-tienda:hover .info-venta {
+    top: 0;
+}
+
+.card-tienda img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.info-venta {
+    transition: .4s ease-in-out all;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #707070dd;
+    padding: 30px;
+}
+
+.info-venta * {
+    color: white;
+}
+
+.data-venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data-venta h5 {
+    font-size: 20px;
+}
+
+.boton-compra {
+    border: solid 2px #111;
+    color: #111;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 3px 15px;
+    transition: all ease-in-out .3s;
+}
+
+.boton-compra:hover {
+    background-color: #111;
+    color: white;
+    transform: translateY(-4px);
+}
