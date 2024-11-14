@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
 }
 
-header {
+#home {
     min-height: 100vh;
     width: 100vw;
     background-image: url(./img/fondo-header.jpg);
@@ -222,54 +222,69 @@ button:hover {
 
 /*Tienda*/
 
-.presentacion-tienda {
-    height: 100vh;
+#tienda {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-tienda {
+    min-height: 15vh;
     width: 100vw;
     background-image: url(./img/fondo-tienda.jpg);
     background-size: cover;
-    backdrop-filter: saturate(0);
+    transition: top 0.5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#header-tienda h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 4.5rem;
 }
 
-.presentacion-tienda h2 {
-    font-size: 200px;
-    color: #eeac39;
-}
-
-.tienda {
+#body-tienda{
+    min-height: 85vh;
+    width: 100vw;
     padding: 50px;
     gap: 30px;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: #050505;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
-.card-tienda {
-    width: 15vw;
-    height: 15vw;
+.card-producto {
+    width: 18vw;
+    height: 18vw;
     position: relative;
     overflow: hidden;
-    background: #fff;
-    /*object-fit:scale-down;*/
+    background: white;
+    /*object-fit:scale-down;
+      position: relative;
+    overflow: hidden;*/
 }
 
-.card-tienda:hover .info-venta {
+.card-producto:hover .card-info {
     top: 0;
 }
 
-.card-tienda img {
+.card-producto img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-.info-venta {
+.card-info {
     transition: .4s ease-in-out all;
     width: 100%;
     height: 100%;
@@ -277,17 +292,13 @@ button:hover {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #707070dd;
+    background-color: #222222b5;
     padding: 30px;
 }
 
-.info-venta * {
-    color: white;
-}
-
-.data-venta {
+.info-producto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,13 +306,20 @@ button:hover {
     gap: 10px;
 }
 
-.data-venta h5 {
-    font-size: 20px;
+.info-producto * {
+    text-align: center;
 }
 
+.info-producto h3 {
+    font-size: 1.2rem;
+}
+
+.info-producto p {
+    font-size: 2rem;
+}
 .boton-compra {
-    border: solid 2px #111;
-    color: #111;
+    border: solid 2px #2edf84;
+    color: #2edf84;
     font-weight: 700;
     border-radius: 5px;
     padding: 3px 15px;
@@ -309,7 +327,7 @@ button:hover {
 }
 
 .boton-compra:hover {
-    background-color: #111;
-    color: white;
+    background-color: #2edf84;
+    color: black;
     transform: translateY(-4px);
 }
