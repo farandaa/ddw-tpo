@@ -244,7 +244,7 @@ button:hover {
     z-index: 1000;
 }
 
-#header-tienda h2{
+#header-tienda h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,7 +252,7 @@ button:hover {
     font-size: 4.5rem;
 }
 
-#body-tienda{
+#body-tienda {
     min-height: 85vh;
     width: 100vw;
     padding: 50px;
@@ -317,6 +317,7 @@ button:hover {
 .info-producto p {
     font-size: 2rem;
 }
+
 .boton-compra {
     border: solid 2px #2edf84;
     color: #2edf84;
@@ -330,4 +331,30 @@ button:hover {
     background-color: #2edf84;
     color: black;
     transform: translateY(-4px);
+}
+
+footer {
+    padding: 20px;
+    background-color: #0a0a0a;
+}
+
+.footer-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-separador {
+    width: 2px;
+    height: 60px;
+    background-color: #2edf84;
+    margin: 0px 30px;
+}
+
+footer ol li img {
+    width: 18px;
+}
+
+footer ol li a {
+    padding: 0px 15px;
 }
