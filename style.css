@@ -148,11 +148,8 @@ nav {
     width: 100vw;
     min-height: 60vh;
     display: flex;
-    justify-content: start;
     align-items: center;
     position: relative;
-    overflow-x: auto;
-    white-space: nowrap;
     backdrop-filter: brightness(.1);
 }
 
@@ -160,7 +157,13 @@ nav {
 button {
     background: linear-gradient(to top, rgba(255, 72, 0, 0.060), rgba(0, 0, 255, 0.060));
     border-radius: 50px;
+    border: none;
     cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -168,7 +171,23 @@ button:hover {
     background: linear-gradient(to top, rgba(255, 72, 0, 0.40), rgba(0, 0, 255, 0.40));
 }
 
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
 /*cards canciones*/
+.cards {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
 .card-cancion {
     background-color: #00000000;
     min-width: 20vw;
@@ -220,6 +239,10 @@ button:hover {
     border-radius: 50%;
 }
 
+.cards::-webkit-scrollbar {
+    display: none;
+  }
+
 /*Tienda*/
 
 #tienda {
@@ -269,9 +292,6 @@ button:hover {
     position: relative;
     overflow: hidden;
     background: white;
-    /*object-fit:scale-down;
-      position: relative;
-    overflow: hidden;*/
 }
 
 .card-producto:hover .card-info {
