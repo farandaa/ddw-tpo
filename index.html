@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acorde || El universo musical en un solo lugar.</title> 
+    <title>Acorde || El universo musical en un solo lugar.</title>
     <link rel="icon" href="/img/favicon-acorde.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="main.js"></script>
+
 </head>
 
 <body>
@@ -44,6 +44,10 @@
             </ul>
         </nav>
     </header>
+
+    <button class="scroll-top" id="botonFijo" onclick="scrollToTop()"><i
+            class="material-icons">arrow_upward</i></button>
+
     <main>
         <section class="generos" id="genero-rock">
             <div class="presentacion-genero">
@@ -54,7 +58,8 @@
                     el amor hasta la rebeldía, cada canción invita a un viaje emocional.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_back_ios</i></button>
+                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_back_ios</i></button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-acdc.jpeg" alt="portada acdc">
@@ -129,7 +134,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_forward_ios</i></button>
+                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_forward_ios</i></button>
             </div>
         </section>
         <section class="generos" id="genero-pop">
@@ -141,7 +147,8 @@
                     nueva generación.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_back_ios</i></button>
+                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_back_ios</i></button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-abba.jpeg" alt="portada abba">
@@ -158,7 +165,8 @@
                         </div>
                     </div>
                     <div class="card-cancion">
-                        <img class="portada-card" src="./img/portada-backstreet-boys.jpeg" alt="portada backstreet boys">
+                        <img class="portada-card" src="./img/portada-backstreet-boys.jpeg"
+                            alt="portada backstreet boys">
                         <div class="info-card">
                             <h4 class="titulo-cancion">Everybody</h4>
                             <p class="artista-cancion">Backstreet Boys</p>
@@ -193,7 +201,8 @@
                         </div>
                     </div>
                     <div class="card-cancion">
-                        <img class="portada-card" src="./img/portada-michael-jackson.jpeg" alt="portada michael jackson">
+                        <img class="portada-card" src="./img/portada-michael-jackson.jpeg"
+                            alt="portada michael jackson">
                         <div class="info-card">
                             <h4 class="titulo-cancion">Billie Jean</h4>
                             <p class="artista-cancion">Michael Jackson</p>
@@ -214,7 +223,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_forward_ios</i></button>
+                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_forward_ios</i></button>
             </div>
         </section>
         <section class="generos" id="genero-rap">
@@ -226,10 +236,12 @@
                     cultura urbana.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_back_ios</i></button>
+                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_back_ios</i></button>
                 <div class="cards">
                     <div class="card-cancion">
-                        <img class="portada-card" src="./img/portada-the-notorius-big.jpg" alt="portada the notorius big">
+                        <img class="portada-card" src="./img/portada-the-notorius-big.jpg"
+                            alt="portada the notorius big">
                         <div class="info-card">
                             <h4 class="titulo-cancion">Juicy</h4>
                             <p class="artista-cancion">The Notorious B.I.G.</p>
@@ -299,7 +311,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_forward_ios</i></button>
+                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_forward_ios</i></button>
             </div>
         </section>
         <section class="generos" id="genero-reggaeton">
@@ -311,7 +324,8 @@
                     en las pistas de baile.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_back_ios</i></button>
+                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_back_ios</i></button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-daddy-yankee.jpg" alt="portada daddy yankee">
@@ -384,7 +398,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_forward_ios</i></button>
+                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_forward_ios</i></button>
             </div>
         </section>
         <section class="generos" id="genero-electronica">
@@ -396,7 +411,8 @@
                     auditivas.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_back_ios</i></button>
+                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_back_ios</i></button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-daft-punk.jpg" alt="portada daft punk">
@@ -470,10 +486,12 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i class="material-icons">arrow_forward_ios</i></button>
+                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
+                        class="material-icons">arrow_forward_ios</i></button>
             </div>
         </section>
     </main>
+
     <section id="tienda">
         <header id="header-tienda">
             <h2>tienda</h2>
@@ -657,6 +675,9 @@
             </div>
         </div>
     </section>
+
+    <script src="main.js"></script>
+
 </body>
 
 <footer>
@@ -664,14 +685,19 @@
         <a href="#home"><img src="./img/logo-acorde.png" alt="logo de sitio web"></a>
         <div class="footer-separador"></div>
         <ol>
-            <li><img src="/img/icon-instagram.png" alt="logo instagram"><a href="https://www.instagram.com/fabi__ar/" target="_blank">Fabian Aranda</a></li>
-            <li><img src="/img/icon-instagram.png" alt="logo instagram"><a href="https://www.instagram.com/omrg_" target="_blank">Omar Góngora</a></li>
-            <li><img src="/img/icon-instagram.png" alt="logo instagram"><a href="https://www.instagram.com" target="_blank">Christian Soto</a></li>
+            <li><img src="/img/icon-instagram.png" alt="logo instagram"><a href="https://www.instagram.com/fabi__ar/"
+                    target="_blank">Fabian Aranda</a></li>
+            <li><img src="/img/icon-instagram.png" alt="logo instagram"><a href="https://www.instagram.com/omrg_"
+                    target="_blank">Omar Góngora</a></li>
+            <li><img src="/img/icon-instagram.png" alt="logo instagram"><a href="https://www.instagram.com"
+                    target="_blank">Christian Soto</a></li>
         </ol>
         <div class="footer-separador"></div>
         <ol>
-            <li><img src="/img/icon-email.png" alt="logo email"><a href="mailto:acorde@gmail.com" target="_blank">acorde@gmail.com</a></li>
-            <li><img src="/img/icon-phone.png" alt="logo telefono"><a href="tel:+541112345678" target="_blank">+54 11 1234-5678</a></li>
+            <li><img src="/img/icon-email.png" alt="logo email"><a href="mailto:acorde@gmail.com"
+                    target="_blank">acorde@gmail.com</a></li>
+            <li><img src="/img/icon-phone.png" alt="logo telefono"><a href="tel:+541112345678" target="_blank">+54 11
+                    1234-5678</a></li>
         </ol>
-    </div>     
+    </div>
 </footer>

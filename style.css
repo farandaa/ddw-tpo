@@ -56,7 +56,6 @@ nav {
     height: 65%;
 }
 
-/*si se rompe, agregar el nav ul li a*/
 .link-nav {
     display: flex;
     flex-direction: column;
@@ -91,7 +90,17 @@ nav {
     background-color: #2edf84;
 }
 
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    margin: 25px;
+    background: linear-gradient(to top, rgba(255, 72, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+
 /*estilo base de la seccion géneros*/
+
 .generos {
     display: flex;
     flex-direction: column;
@@ -104,6 +113,7 @@ nav {
 }
 
 /*fondo genero*/
+
 #genero-rock {
     background-image: url(./img/fondo-rock.jpg);
 }
@@ -125,6 +135,7 @@ nav {
 }
 
 /*contenedor presentacion del género*/
+
 .presentacion-genero {
     min-width: 100vw;
     min-height: 39vh;
@@ -132,6 +143,7 @@ nav {
 }
 
 /*elementos presentación*/
+
 .titulo-genero {
     font-size: 5rem;
     padding: .5vw 6vh;
@@ -144,6 +156,7 @@ nav {
 }
 
 /*contenedor canciones del género*/
+
 .canciones-genero {
     width: 100vw;
     min-height: 60vh;
@@ -153,7 +166,8 @@ nav {
     backdrop-filter: brightness(.1);
 }
 
-/*botón de desplazamiento*/
+/*botón de desplazamiento cards*/
+
 button {
     background: linear-gradient(to top, rgba(255, 72, 0, 0.060), rgba(0, 0, 255, 0.060));
     border-radius: 50px;
@@ -180,6 +194,7 @@ button:hover {
 }
 
 /*cards canciones*/
+
 .cards {
     width: 100%;
     display: flex;
@@ -258,13 +273,6 @@ button:hover {
     background-image: url(./img/fondo-tienda.jpg);
     background-size: cover;
     transition: top 0.5s;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
 #header-tienda h2 {
@@ -352,6 +360,8 @@ button:hover {
     color: black;
     transform: translateY(-4px);
 }
+
+/*Footer*/
 
 footer {
     padding: 20px;
