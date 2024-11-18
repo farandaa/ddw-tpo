@@ -1,4 +1,4 @@
-const botonFijo = document.getElementById('botonFijo');
+const botonFijo = document.getElementById('scroll-top');
 const posicion = 200;
 
 window.addEventListener('scroll', () => {
