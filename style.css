@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,6 +12,23 @@
     scroll-behavior: smooth;
 }
 
+.boton-flecha {  
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+
+.boton-icono {
+    height: 100%;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+/* PÁGINA PRINCIPAL */
 #home {
     min-height: 100vh;
     width: 100vw;
@@ -27,7 +45,7 @@
     align-items: center;
 }
 
-/*estilo de nav*/
+/*Menú Principal*/
 nav {
     min-height: 85vh;
     backdrop-filter: brightness(.3);
@@ -90,16 +108,15 @@ nav {
     background-color: #2edf84;
 }
 
-.scroll-top{
+.scroll-vertical{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
-    margin: 25px;
-    background: linear-gradient(to top, rgba(255, 72, 0, 0.5), rgba(0, 0, 255, 0.5));
+    z-index: 10;
+    background-color: #2edf84;
 }
 
-/*estilo base de la seccion géneros*/
+/* PÁGINAS GÉNEROS */
 
 .generos {
     display: flex;
@@ -111,8 +128,6 @@ nav {
     background-size: cover;
     background-position: center;
 }
-
-/*fondo genero*/
 
 #genero-rock {
     background-image: url(./img/fondo-rock.jpg);
@@ -134,15 +149,13 @@ nav {
     background-image: url(./img/fondo-electronica.jpg);
 }
 
-/*contenedor presentacion del género*/
+/*Contenedor Presentación del Género*/
 
 .presentacion-genero {
     min-width: 100vw;
     min-height: 39vh;
     backdrop-filter: brightness(.3);
 }
-
-/*elementos presentación*/
 
 .titulo-genero {
     font-size: 5rem;
@@ -155,7 +168,7 @@ nav {
     padding: 0vw 6vh;
 }
 
-/*contenedor canciones del género*/
+/*Contenedor Canciones del Género*/
 
 .canciones-genero {
     width: 100vw;
@@ -166,34 +179,28 @@ nav {
     backdrop-filter: brightness(.1);
 }
 
-/*botón de desplazamiento cards*/
+/*Flechas Scroll Cards*/
 
-button {
-    background: linear-gradient(to top, rgba(255, 72, 0, 0.060), rgba(0, 0, 255, 0.060));
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
+.scroll-horizontal {
     position: absolute;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    font-size: 40px;
+    background: linear-gradient(to top, rgba(255, 72, 0, 0.060), rgba(0, 0, 255, 0.060));
 }
 
-button:hover {
+.scroll-horizontal:hover {
     background: linear-gradient(to top, rgba(255, 72, 0, 0.40), rgba(0, 0, 255, 0.40));
 }
 
-.scroll-left {
-    left: 10px;
+#scroll-left {
+    left: 20px;
 }
 
-.scroll-right {
-    right: 10px;
+#scroll-right {
+    right: 20px;
 }
 
-/*cards canciones*/
+/*Cards Canciones*/
 
 .cards {
     width: 100%;
@@ -258,7 +265,7 @@ button:hover {
     display: none;
   }
 
-/*Tienda*/
+/* TIENDA */
 
 #tienda {
     min-height: 100vh;
@@ -272,7 +279,24 @@ button:hover {
     width: 100vw;
     background-image: url(./img/fondo-tienda.jpg);
     background-size: cover;
-    transition: top 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-icon {
+    width: 10%;
+    height: 6.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carrito {
+    display: flex;
+    justify-content: flex-start;
 }
 
 #header-tienda h2 {
@@ -281,6 +305,7 @@ button:hover {
     align-items: center;
     color: white;
     font-size: 4.5rem;
+    width: 90%;
 }
 
 #body-tienda {
@@ -323,7 +348,7 @@ button:hover {
     justify-content: space-evenly;
     align-items: center;
     background-color: #222222b5;
-    padding: 30px;
+    padding: 15px;
 }
 
 .info-producto {
@@ -331,7 +356,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .info-producto * {
@@ -346,19 +371,30 @@ button:hover {
     font-size: 2rem;
 }
 
+.compra{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
 .boton-compra {
+    width: 40%;
+    height: 60%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
     border: solid 2px #2edf84;
     color: #2edf84;
-    font-weight: 700;
-    border-radius: 5px;
-    padding: 3px 15px;
+    background-color: #00000000;
+    cursor: pointer;
     transition: all ease-in-out .3s;
 }
 
 .boton-compra:hover {
     background-color: #2edf84;
-    color: black;
-    transform: translateY(-4px);
+    color: rgb(255, 255, 255);
 }
 
 /*Footer*/

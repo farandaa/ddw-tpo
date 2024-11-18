@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acorde || El universo musical en un solo lugar.</title>
     <link rel="icon" href="/img/favicon-acorde.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -45,8 +44,10 @@
         </nav>
     </header>
 
-    <button class="scroll-top" id="botonFijo" onclick="scrollToTop()"><i
-            class="material-icons">arrow_upward</i></button>
+    <span>
+        <button class="material-symbols-outlined boton-flecha scroll-vertical" id="scroll-top"
+            onclick="scrollToTop()">arrow_upward</button>
+    </span>
 
     <main>
         <section class="generos" id="genero-rock">
@@ -58,8 +59,8 @@
                     el amor hasta la rebeldía, cada canción invita a un viaje emocional.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_back_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                    onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-acdc.jpeg" alt="portada acdc">
@@ -134,8 +135,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_forward_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                    onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
         <section class="generos" id="genero-pop">
@@ -147,8 +148,8 @@
                     nueva generación.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_back_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                    onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-abba.jpeg" alt="portada abba">
@@ -223,8 +224,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_forward_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                    onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
         <section class="generos" id="genero-rap">
@@ -236,8 +237,8 @@
                     cultura urbana.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_back_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                    onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-the-notorius-big.jpg"
@@ -311,8 +312,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_forward_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                    onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
         <section class="generos" id="genero-reggaeton">
@@ -324,8 +325,8 @@
                     en las pistas de baile.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_back_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                    onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-daddy-yankee.jpg" alt="portada daddy yankee">
@@ -398,8 +399,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_forward_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                    onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
         <section class="generos" id="genero-electronica">
@@ -411,8 +412,8 @@
                     auditivas.</p>
             </div>
             <div class="canciones-genero">
-                <button class="scroll-left" onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_back_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                    onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
                         <img class="portada-card" src="./img/portada-daft-punk.jpg" alt="portada daft punk">
@@ -486,15 +487,23 @@
                         </div>
                     </div>
                 </div>
-                <button class="scroll-right" onclick="scrollCards(1, this.parentElement.querySelector('.cards'))"><i
-                        class="material-icons">arrow_forward_ios</i></button>
+                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                    onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
     </main>
 
     <section id="tienda">
         <header id="header-tienda">
+            <span class="container-icon menu">
+                <button class="material-symbols-outlined boton-icono">menu</button>
+            </span>
+
             <h2>tienda</h2>
+
+            <span class="container-icon carrito">
+                <button class="material-symbols-outlined boton-icono">shopping_cart</button>
+            </span>
         </header>
         <div id="body-tienda">
             <div class="card-producto">
@@ -504,8 +513,12 @@
                         <h3>Guitarra Electrica Parquer</h3>
                         <p><strong>$207.202</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/guitarra-electrica-parquer-tipo-stratocaster-st100blu-dvd/p/MLA23203060#polycard_client=search-nordic&searchVariation=MLA23203060&position=6&search_layout=grid&type=product&tracking_id=192455a5-4829-4fd2-936b-7575a7327aaa&wid=MLA1689241022&sid=search"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Guitarra Electrica Parquer" data-val="207202"
+                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Guitarra Electrica Parquer" data-val="207202"
+                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -515,63 +528,87 @@
                         <h3>Guitarra Electrica Gibson Les Paul Standard 60 S</h3>
                         <p><strong>$10.652.967</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-1744020086-gibson-les-paul-standard-60-s-figured-top-oxblood-_JM?searchVariation=180329730410#polycard_client=search-nordic&searchVariation=180329730410&position=26&search_layout=grid&type=item&tracking_id=039789e2-373c-4d0e-974b-3453c910d29a"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Guitarra Electrica Gibson Les Paul Standard 60 S"
+                            data-val="10652967" data-cat="Instrumentos Musicales" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Guitarra Electrica Gibson Les Paul Standard 60 S"
+                            data-val="10652967" data-cat="Instrumentos Musicales" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-bateria.png" alt="foto de batería Volta Beige Parquer">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Batería Volta Beige Parquer 5 Cuerpos C/fierros+pedal+banqueta</h3>
+                        <h3>Batería Volta Beige Parquer 5 Cuerpos</h3>
                         <p><strong>$1.441.803</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-635618292-bateria-volta-beige-parquer-5-cuerpos-cfierrospedalbanque-_JM#polycard_client=search-nordic&position=25&search_layout=stack&type=item&tracking_id=f58e5a3d-9cc3-464a-a501-dc882a740b14"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Batería Volta Beige Parquer 5 Cuerpos" data-val="1441803"
+                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Batería Volta Beige Parquer 5 Cuerpos" data-val="1441803"
+                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-microfono.png" alt="foto de micrófono Shure SM SM58-LC">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Micrófono Shure SM SM58-LC dinámico cardioide</h3>
+                        <h3>Micrófono Shure SM SM58-LC</h3>
                         <p><strong>$292.477</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/microfono-shure-sm-sm58-lc-dinamico-cardioide-gris-oscuroplateado/p/MLA18332604#reco_item_pos=2&reco_backend=item_decorator&reco_backend_type=function&reco_client=home_items-decorator-legacy&reco_id=570e0e3d-9e66-4ab6-898d-d580b23af771&c_id=/home/second-best-navigation-trend-recommendations/element&c_uid=765bca08-978d-4e69-9fd2-e4199420e94d&da_id=second_best_navigation_trend&da_position=2&id_origin=/home/dynamic_access&da_sort_algorithm=ranker"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Micrófono Shure SM SM58-LC" data-val="292477"
+                            data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Micrófono Shure SM SM58-LC" data-val="292477"
+                            data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-teclado.png" alt="foto de piano eléctrico Roland Fp10">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Piano Eléctrico Roland Fp10 - 88 Teclas</h3>
+                        <h3>Piano Eléctrico Roland FP10</h3>
                         <p><strong>$1.840.230</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/piano-electrico-roland-fp10-88-teclas-peso-martillo-color-negro/p/MLA28097141#polycard_client=search-nordic&searchVariation=MLA28097141&position=11&search_layout=stack&type=product&tracking_id=20aa4e54-f83a-435c-bdbe-aaabd04c545a&wid=MLA1395730047&sid=search"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Piano Eléctrico Roland FP10" data-val="1840230"
+                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Piano Eléctrico Roland FP10" data-val="1840230"
+                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-guitarra-acustica.png" alt="foto de guitarra acústica Epiphone Starling">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Guitarra acústica Epiphone Starling</h3>
+                        <h3>Guitarra Acústica Epiphone Starling</h3>
                         <p><strong>$259.211</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/guitarra-acustica-epiphone-starling-eastarebch1-para-diestros-ebony-laurel-indio/p/MLA23231306#polycard_client=search-nordic&searchVariation=MLA23231306&position=14&search_layout=grid&type=product&tracking_id=b5dfb987-be15-4932-9132-d9fff8d84fb1&wid=MLA1449139410&sid=search"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Guitarra Acústica Epiphone Starling" data-val="259211"
+                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Guitarra Acústica Epiphone Starling" data-val="259211"
+                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-amplificador.png" alt="foto de amplificador Fender Frontman 20g">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Amplificador Para Guitarra Fender Frontman 20g</h3>
+                        <h3>Amplificador de Guitarra Fender Frontman 20G</h3>
                         <p><strong>$404.999</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/amplificador-para-guitarra-fender-frontman-20g/p/MLA20504517#polycard_client=search-nordic&searchVariation=MLA20504517&position=7&search_layout=stack&type=product&tracking_id=537a8532-467f-4143-9a7d-9422539b049c&wid=MLA1386715485&sid=search"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Amplificador de Guitarra Fender Frontman 20G"
+                            data-val="404999" data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Amplificador de Guitarra Fender Frontman 20G"
+                            data-val="404999" data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -581,19 +618,27 @@
                         <h3>Saxo Tenor Parquer Mystic</h3>
                         <p><strong>$1.974.780</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-795516663-saxo-tenor-parquer-mystic-estuche-envio-gratis-oferta-cuota-_JM#polycard_client=search-nordic&position=19&search_layout=grid&type=item&tracking_id=d0213f5d-5fd9-408c-9030-9fd33aecd1e7"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Saxo Tenor Parquer Mystic" data-val="1974780"
+                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Saxo Tenor Parquer Mystic" data-val="1974780"
+                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-dj.png" alt="foto de controlador DJ Pioneer DDJ-FLX4">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Pioneer DDJ-FLX4 Controlador DJ De 2 Canales</h3>
+                        <h3>Pioneer DDJ-FLX4 Controlador DJ</h3>
                         <p><strong>$753.409</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/pioneer-ddj-flx4-controlador-dj-de-2-canales-negro/p/MLA23145920#polycard_client=search-nordic&searchVariation=MLA23145920&position=1&search_layout=stack&type=product&tracking_id=871a7510-397a-42ab-8b5a-e2734c3cb26b&wid=MLA1429294156&sid=search"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Pioneer DDJ-FLX4 Controlador DJ" data-val="753409"
+                            data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Pioneer DDJ-FLX4 Controlador DJ" data-val="753409"
+                            data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -603,19 +648,27 @@
                         <h3>Michael Jackson Thriller Vinilo</h3>
                         <p><strong>$65.990</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-630924622-michael-jackson-thriller-vinilo-150-grs-nuevo-importado-_JM#polycard_client=search-nordic&position=18&search_layout=grid&type=item&tracking_id=c8f4421b-5d57-4904-9c6d-3bdc2b2e8c15"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Michael Jackson Thriller Vinilo" data-val="65990"
+                            data-cat="Vinilos" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Michael Jackson Thriller Vinilo" data-val="65990"
+                            data-cat="Vinilos" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-vinilo-pescado.png" alt="foto de vinilo Artaud de Pescado Rabioso">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Vinilo - Artaud - Pescado Rabioso</h3>
+                        <h3>Pescado Rabioso Artaud Vinilo</h3>
                         <p><strong>$49.968</strong></p>
                     </div>
-                    <a href="https://www.mercadolibre.com.ar/vinilo-artaud-pescado-rabioso/p/MLA28090480#polycard_client=search-nordic&searchVariation=MLA28090480&position=2&search_layout=grid&type=product&tracking_id=16099079-2b13-4fd4-bee9-31b360904e38&wid=MLA1397094937&sid=search"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Pescado Rabioso Artaud Vinilo" data-val="49968"
+                            data-cat="Vinilos" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Pescado Rabioso Artaud Vinilo" data-val="49968"
+                            data-cat="Vinilos" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -625,19 +678,27 @@
                         <h3>Remera Daft Punk 1992</h3>
                         <p><strong>$39.999</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-1219584002-remera-daft-punk-1992-dj-french-house-me39-dtg-premium-_JM?searchVariation=175640141014#polycard_client=search-nordic&searchVariation=175640141014&position=24&search_layout=grid&type=item&tracking_id=f50b71dc-952e-48a0-8242-b458a1059653"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Remera Daft Punk 1992" data-val="39999" data-cat="Remeras"
+                            class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Remera Daft Punk 1992" data-val="37999" data-cat="Remeras"
+                            class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
                 <img src="./img/tienda-remera-tiesto.png" alt="foto de remera Tiesto">
                 <div class="card-info">
                     <div class="info-producto">
-                        <h3>Remeras Tiesto</h3>
+                        <h3>Remera Tiesto</h3>
                         <p><strong>$17.999</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-643060516-remeras-tiesto-electronica-trance-house-mr-korneforos-xv-_JM?searchVariation=13470401834#polycard_client=search-nordic&searchVariation=13470401834&position=35&search_layout=grid&type=item&tracking_id=f50b71dc-952e-48a0-8242-b458a1059653"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Remera Tiesto" data-val="17999" data-cat="Remeras"
+                            class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Remera Tiesto" data-val="17999" data-cat="Remeras"
+                            class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -647,8 +708,12 @@
                         <h3>Remera Porta</h3>
                         <p><strong>$28.003</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-1380623339-remera-porta-rap-100-algodon-unisex-_JM#polycard_client=search-nordic&position=3&search_layout=stack&type=item&tracking_id=106879f1-6af9-4fc7-9fc4-aabd984eaa48"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Remera Porta" data-val="28003" data-cat="Remeras"
+                            class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Remera Porta" data-val="28003" data-cat="Remeras"
+                            class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -658,8 +723,12 @@
                         <h3>Remera Soda Stereo</h3>
                         <p><strong>$27.999</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-1372990021-remeras-soda-stereo-4102228-video-animado-algodon-_JM?searchVariation=178603425335#polycard_client=search-nordic&searchVariation=178603425335&position=20&search_layout=grid&type=item&tracking_id=67563a93-2fd8-4776-a468-c2e09f9065af"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Remera Soda Stereo" data-val="27999" data-cat="Remeras"
+                            class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Remera Soda Stereo" data-val="27999" data-cat="Remeras"
+                            class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
             <div class="card-producto">
@@ -669,8 +738,12 @@
                         <h3>Amplificador De Guitarra Marshall MG10CF</h3>
                         <p><strong>$240.218</strong></p>
                     </div>
-                    <a href="https://articulo.mercadolibre.com.ar/MLA-845435685-amplificador-de-guitarra-marshall-mg10cf-10w-2canales-_JM#is_advertising=true&position=10&search_layout=stack&type=pad&tracking_id=43049a81-1b79-49df-a093-3cc51c86c10f&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=10&ad_click_id=M2NkYzRkY2MtMTJjMy00MTk1LWE2NGMtMmY1ZDkxOWRiYjE1"
-                        class="boton-compra" target="_blank">Comprar</a>
+                    <span class="compra">
+                        <button class="boton-compra" data-id="Amplificador De Guitarra Marshall MG10CF"
+                            data-val="240218" data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
+                        <button class="boton-compra" data-id="Amplificador De Guitarra Marshall MG10CF"
+                            data-val="240218" data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
+                    </span>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > posicion) {
         botonFijo.style.display = 'block';
     } else {
-        botonFijo.style.display = 'none';
+        botonFijo.style.display = 'none'; 
     }
 });
 
