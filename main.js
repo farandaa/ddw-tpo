@@ -33,7 +33,7 @@ const toggleCarritoBtn = document.getElementById('btn-carrito');
 
 // Función para mostrar/ocultar el carrito
 toggleCarritoBtn.addEventListener('click', () => {
-    carritoElemento.classList.toggle('oculto'); // Alterna la clase 'oculto'
+    carritoElemento.classList.toggle('oculto');
 });
 
 // Función para agregar productos al carrito
@@ -73,7 +73,6 @@ function actualizarCarrito() {
     });
 
     totalCompra.textContent = total.toFixed(2);
-
 }
 
 // Evento para realizar el pago
