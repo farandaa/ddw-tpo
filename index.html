@@ -45,7 +45,7 @@
     </header>
 
     <span>
-        <button class="material-symbols-outlined boton-flecha scroll-vertical" id="scroll-top"
+        <button class="material-symbols-outlined btn-flecha scroll-vertical" id="scroll-top"
             onclick="scrollToTop()">arrow_upward</button>
     </span>
 
@@ -59,7 +59,7 @@
                     el amor hasta la rebeldía, cada canción invita a un viaje emocional.</p>
             </div>
             <div class="canciones-genero">
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-left"
                     onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-right"
                     onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
@@ -148,7 +148,7 @@
                     nueva generación.</p>
             </div>
             <div class="canciones-genero">
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-left"
                     onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-right"
                     onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
@@ -237,7 +237,7 @@
                     cultura urbana.</p>
             </div>
             <div class="canciones-genero">
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-left"
                     onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-right"
                     onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
@@ -325,7 +325,7 @@
                     en las pistas de baile.</p>
             </div>
             <div class="canciones-genero">
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-left"
                     onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
@@ -399,7 +399,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-right"
                     onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
@@ -412,7 +412,7 @@
                     auditivas.</p>
             </div>
             <div class="canciones-genero">
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-left"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-left"
                     onclick="scrollCards(-1, this.parentElement.querySelector('.cards'))">arrow_back_ios</button>
                 <div class="cards">
                     <div class="card-cancion">
@@ -487,7 +487,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="material-symbols-outlined boton-flecha scroll-horizontal" id="scroll-right"
+                <button class="material-symbols-outlined btn-flecha scroll-horizontal" id="scroll-right"
                     onclick="scrollCards(1, this.parentElement.querySelector('.cards'))">arrow_forward_ios</button>
             </div>
         </section>
@@ -495,257 +495,270 @@
 
     <section id="tienda">
         <header id="header-tienda">
-            <span class="container-icon menu">
-                <button class="material-symbols-outlined boton-icono">menu</button>
+            <span class="container-icon" id="btn-menu">
+                <button class="material-symbols-outlined btn-icono">menu</button>
             </span>
 
             <h2>tienda</h2>
 
-            <span class="container-icon carrito">
-                <button class="material-symbols-outlined boton-icono">shopping_cart</button>
+            <span class="container-icon" id="btn-carrito">
+                <button class="material-symbols-outlined btn-icono">shopping_cart</button>
             </span>
+
         </header>
         <div id="body-tienda">
-            <div class="card-producto">
-                <img src="./img/tienda-guitarra-electrica-compra.png" alt=" foto de guitarra electrica Parquer">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Guitarra Electrica Parquer</h3>
-                        <p><strong>$207.202</strong></p>
+            <div id="productos">
+                <div class="card-producto">
+                    <img src="./img/tienda-guitarra-electrica-compra.png" alt="foto de guitarra eléctrica Parquer">
+                    <div class="producto" data-id="1" data-nombre="Guitarra Eléctrica Parquer" data-precio="207202"
+                        data-categoria="Instrumentos Musicales">
+                        <div class="info-producto">
+                            <h3>Guitarra Eléctrica Parquer</h3>
+                            <p><strong>$207.202</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
                     </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Guitarra Electrica Parquer" data-val="207202"
-                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Guitarra Electrica Parquer" data-val="207202"
-                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
-                    </span>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-gibson-les-paul.png" alt="guitarra eléctrica Les Paul">
+                    <div class="producto" data-id="2" data-nombre="Guitarra Eléctrica Gibson Les Paul Standard 60S"
+                        data-precio="10652967" data-categoria="Instrumentos Musicales">
+                        <div class="info-producto">
+                            <h3>Guitarra Eléctrica Gibson Les Paul Standard 60S</h3>
+                            <p><strong>$10.652.967</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-bateria.png" alt="foto de batería Volta Beige Parquer">
+                    <div class="producto" data-id="3" data-nombre="Batería Volta Beige Parquer 5 Cuerpos"
+                        data-precio="1441803" data-categoria="Instrumentos Musicales">
+                        <div class="info-producto">
+                            <h3>Batería Volta Beige Parquer 5 Cuerpos</h3>
+                            <p><strong>$1.441.803</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-microfono.png" alt="foto de micrófono Shure SM SM58-LC">
+                    <div class="producto" data-id="4" data-nombre="Micrófono Shure SM SM58-LC" data-precio="292477"
+                        data-categoria="Dispositivos Elecrónicos">
+                        <div class="info-producto">
+                            <h3>Micrófono Shure SM SM58-LC</h3>
+                            <p><strong>$292.477</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-teclado.png" alt="foto de piano eléctrico Roland Fp10">
+                    <div class="producto" data-id="5" data-nombre="Piano Eléctrico Roland FP10" data-precio="1840230"
+                        data-categoria="Instrumentos Musicales">
+                        <div class="info-producto">
+                            <h3>Piano Eléctrico Roland FP10</h3>
+                            <p><strong>$1.840.230</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-guitarra-acustica.png" alt="foto de guitarra acústica Epiphone Starling">
+                    <div class="producto" data-id="6" data-nombre="Guitarra Acústica Epiphone Starling"
+                        data-precio="259211" data-categoria="Instrumentos Musicales">
+                        <div class="info-producto">
+                            <h3>Guitarra Acústica Epiphone Starling</h3>
+                            <p><strong>$259.211</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-amplificador.png" alt="foto de amplificador Fender Frontman 20g">
+                    <div class="producto" data-id="7" data-nombre="Amplificador de Guitarra Fender Frontman 20G"
+                        data-precio="404999" data-categoria="Dispositivos Elecrónicos">
+                        <div class="info-producto">
+                            <h3>Amplificador de Guitarra Fender Frontman 20G</h3>
+                            <p><strong>$404.999</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-saxo.png" alt="foto de saxo tenor Parquer Mystic">
+                    <div class="producto" data-id="8" data-nombre="Saxo Tenor Parquer Mystic" data-precio="1974780"
+                        data-categoria="Instrumentos Musicales">
+                        <div class="info-producto">
+                            <h3>Saxo Tenor Parquer Mystic</h3>
+                            <p><strong>$1.974.780</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-dj.png" alt="foto de controlador DJ Pioneer DDJ-FLX4">
+                    <div class="producto" data-id="9" data-nombre="Pioneer DDJ-FLX4 Controlador DJ" data-precio="753409"
+                        data-categoria="Dispositivos Elecrónicos">
+                        <div class="info-producto">
+                            <h3>Pioneer DDJ-FLX4 Controlador DJ</h3>
+                            <p><strong>$753.409</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-vinilo-michael.png" alt="foto de vinilo Thriller de Michael Jackson">
+                    <div class="producto" data-id="10" data-nombre="Michael Jackson Thriller Vinilo" data-precio="65990"
+                        data-categoria="Vinilos">
+                        <div class="info-producto">
+                            <h3>Michael Jackson Thriller Vinilo</h3>
+                            <p><strong>$65.990</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-vinilo-pescado.png" alt="foto de vinilo Artaud de Pescado Rabioso">
+                    <div class="producto" data-id="11" data-nombre="Pescado Rabioso Artaud Vinilo" data-precio="49968"
+                        data-categoria="Vinilos">
+                        <div class="info-producto">
+                            <h3>Pescado Rabioso Artaud Vinilo</h3>
+                            <p><strong>$49.968</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-remera-daft-punk.png" alt="foto de remera Daft Punk 1992">
+                    <div class="producto" data-id="12" data-nombre="Remera Daft Punk 1992" data-precio="39999"
+                        data-categoria="Remeras">
+                        <div class="info-producto">
+                            <h3>Remera Daft Punk 1992</h3>
+                            <p><strong>$39.999</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-remera-tiesto.png" alt="foto de remera Tiesto">
+                    <div class="producto" data-id="13" data-nombre="Remera Tiesto" data-precio="17999"
+                        data-categoria="Remeras">
+                        <div class="info-producto">
+                            <h3>Remera Tiesto</h3>
+                            <p><strong>$17.999</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-remera-porta.png" alt="foto de remera Porta">
+                    <div class="producto" data-id="14" data-nombre="Remera Porta" data-precio="28003"
+                        data-categoria="Remeras">
+                        <div class="info-producto">
+                            <h3>Remera Porta</h3>
+                            <p><strong>$28.003</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-remera-soda.png" alt="foto de remera Soda Stereo">
+                    <div class="producto" data-id="15" data-nombre="Remera Soda Stereo" data-precio="27999"
+                        data-categoria="Remeras">
+                        <div class="info-producto">
+                            <h3>Remera Soda Stereo</h3>
+                            <p><strong>$27.999</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-producto">
+                    <img src="./img/tienda-amplificador-marshall.png" alt="foto de amplificador Marshall">
+                    <div class="producto" data-id="16" data-nombre="Amplificador De Guitarra Marshall MG10CF"
+                        data-precio="240218" data-categoria="Dispositivos Elecrónicos">
+                        <div class="info-producto">
+                            <h3>Amplificador De Guitarra Marshall MG10CF</h3>
+                            <p><strong>$240.218</strong></p>
+                        </div>
+                        <span class="compra">
+                            <button class="boton-compra agregar">Agregar</button>
+                            <button class="boton-compra quitar">Quitar</button>
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="card-producto">
-                <img src="./img/tienda-gibson-les-paul.png" alt="guitarra electrica les paul">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Guitarra Electrica Gibson Les Paul Standard 60 S</h3>
-                        <p><strong>$10.652.967</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Guitarra Electrica Gibson Les Paul Standard 60 S"
-                            data-val="10652967" data-cat="Instrumentos Musicales" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Guitarra Electrica Gibson Les Paul Standard 60 S"
-                            data-val="10652967" data-cat="Instrumentos Musicales" class="del">Quitar</button>
-                    </span>
+            <aside id="carrito" class="oculto">
+                <h2>Carrito de Compras</h2>
+                <div id="lista-carrito">
+                    <ul>
+                    </ul>
                 </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-bateria.png" alt="foto de batería Volta Beige Parquer">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Batería Volta Beige Parquer 5 Cuerpos</h3>
-                        <p><strong>$1.441.803</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Batería Volta Beige Parquer 5 Cuerpos" data-val="1441803"
-                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Batería Volta Beige Parquer 5 Cuerpos" data-val="1441803"
-                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
-                    </span>
+                <div>
+                    <p>Total: $<span id="total-compra">0.00</span></p>
+                    <button id="btn-pagar">PAGAR AHORA</button>
                 </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-microfono.png" alt="foto de micrófono Shure SM SM58-LC">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Micrófono Shure SM SM58-LC</h3>
-                        <p><strong>$292.477</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Micrófono Shure SM SM58-LC" data-val="292477"
-                            data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Micrófono Shure SM SM58-LC" data-val="292477"
-                            data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-teclado.png" alt="foto de piano eléctrico Roland Fp10">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Piano Eléctrico Roland FP10</h3>
-                        <p><strong>$1.840.230</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Piano Eléctrico Roland FP10" data-val="1840230"
-                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Piano Eléctrico Roland FP10" data-val="1840230"
-                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-guitarra-acustica.png" alt="foto de guitarra acústica Epiphone Starling">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Guitarra Acústica Epiphone Starling</h3>
-                        <p><strong>$259.211</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Guitarra Acústica Epiphone Starling" data-val="259211"
-                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Guitarra Acústica Epiphone Starling" data-val="259211"
-                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-amplificador.png" alt="foto de amplificador Fender Frontman 20g">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Amplificador de Guitarra Fender Frontman 20G</h3>
-                        <p><strong>$404.999</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Amplificador de Guitarra Fender Frontman 20G"
-                            data-val="404999" data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Amplificador de Guitarra Fender Frontman 20G"
-                            data-val="404999" data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-saxo.png" alt="foto de saxo tenor Parquer Mystic">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Saxo Tenor Parquer Mystic</h3>
-                        <p><strong>$1.974.780</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Saxo Tenor Parquer Mystic" data-val="1974780"
-                            data-cat="Instrumentos Musicales" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Saxo Tenor Parquer Mystic" data-val="1974780"
-                            data-cat="Instrumentos Musicales" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-dj.png" alt="foto de controlador DJ Pioneer DDJ-FLX4">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Pioneer DDJ-FLX4 Controlador DJ</h3>
-                        <p><strong>$753.409</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Pioneer DDJ-FLX4 Controlador DJ" data-val="753409"
-                            data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Pioneer DDJ-FLX4 Controlador DJ" data-val="753409"
-                            data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-vinilo-michael.png" alt="foto de vinilo Thriller de Michael Jackson">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Michael Jackson Thriller Vinilo</h3>
-                        <p><strong>$65.990</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Michael Jackson Thriller Vinilo" data-val="65990"
-                            data-cat="Vinilos" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Michael Jackson Thriller Vinilo" data-val="65990"
-                            data-cat="Vinilos" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-vinilo-pescado.png" alt="foto de vinilo Artaud de Pescado Rabioso">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Pescado Rabioso Artaud Vinilo</h3>
-                        <p><strong>$49.968</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Pescado Rabioso Artaud Vinilo" data-val="49968"
-                            data-cat="Vinilos" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Pescado Rabioso Artaud Vinilo" data-val="49968"
-                            data-cat="Vinilos" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-remera-daft-punk.png" alt="foto de remera Daft Punk 1992">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Remera Daft Punk 1992</h3>
-                        <p><strong>$39.999</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Remera Daft Punk 1992" data-val="39999" data-cat="Remeras"
-                            class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Remera Daft Punk 1992" data-val="37999" data-cat="Remeras"
-                            class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-remera-tiesto.png" alt="foto de remera Tiesto">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Remera Tiesto</h3>
-                        <p><strong>$17.999</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Remera Tiesto" data-val="17999" data-cat="Remeras"
-                            class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Remera Tiesto" data-val="17999" data-cat="Remeras"
-                            class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-remera-porta.png" alt="foto de remera Porta">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Remera Porta</h3>
-                        <p><strong>$28.003</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Remera Porta" data-val="28003" data-cat="Remeras"
-                            class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Remera Porta" data-val="28003" data-cat="Remeras"
-                            class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-remera-soda.png" alt="foto de remera Soda Stereo">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Remera Soda Stereo</h3>
-                        <p><strong>$27.999</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Remera Soda Stereo" data-val="27999" data-cat="Remeras"
-                            class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Remera Soda Stereo" data-val="27999" data-cat="Remeras"
-                            class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
-            <div class="card-producto">
-                <img src="./img/tienda-amplificador-marshall.png" alt="foto de amplificador Marshall">
-                <div class="card-info">
-                    <div class="info-producto">
-                        <h3>Amplificador De Guitarra Marshall MG10CF</h3>
-                        <p><strong>$240.218</strong></p>
-                    </div>
-                    <span class="compra">
-                        <button class="boton-compra" data-id="Amplificador De Guitarra Marshall MG10CF"
-                            data-val="240218" data-cat="Dispositivos Elecrónicos" class="add">Agregar</button>
-                        <button class="boton-compra" data-id="Amplificador De Guitarra Marshall MG10CF"
-                            data-val="240218" data-cat="Dispositivos Elecrónicos" class="del">Quitar</button>
-                    </span>
-                </div>
-            </div>
+            </aside>
         </div>
     </section>
 
